@@ -1,0 +1,46 @@
+.container{
+	width: 75%;
+	margin: 10px auto;
+}
+.wrapper{
+	margin: 5px auto;
+}
+
+details{
+	display: inline-block;
+	border: 0.5px solid gray;
+	width: 100%;
+	border-radius: 5px;
+}
+
+details[open] > summary{
+	background-color: green;
+}
+
+details[open] > div{
+	animation: fade 0.3s ease-in-out;
+}
+
+@keyframes fade {
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+.detail-text{
+	padding: 10px;
+}
+
+summary{
+	background-color: teal;
+	color: white;
+	padding: 10px;
+}
+
+summary:hover {
+	cursor: pointer;
+}
